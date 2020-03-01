@@ -12,6 +12,10 @@
 
 從去年9月參加聯發科比賽,就一直使用的方法。
 
+------
+
+
+
 #### 2.[Google Cloud使用筆記(六)：使用 Cloud AutoML Vision訓練影像辨識模型(Tensorflow Lite)](https://medium.com/@yanweiliu/google-cloud-automl-vision-model-training-d80fabc17dfe)
 
 **想法：**
@@ -22,6 +26,10 @@ AutoML Vision是一個很方便的線上服務,可以在**線上進行Model訓�
 **搭配Python API**：讓Jetson Nano或是Raspberry Pi進行線上辨識,減輕硬體負擔
 **[搭配React Native的API](https://github.com/shaqian/tflite-react-native/tree/master/example)**：可完成Android的辨識APP開發
 
+------
+
+
+
 #### 3.[Google Cloud使用筆記(五)：使用 Google Vision API進行影像辨識](https://medium.com/@yanweiliu/google-cloud%E4%BD%BF%E7%94%A8%E7%AD%86%E8%A8%98-%E4%BA%94-%E4%BD%BF%E7%94%A8-google-vision-api%E9%80%B2%E8%A1%8C%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98-51aabc2064ff)
 
 **想法：**
@@ -30,10 +38,10 @@ Google Vision API不需要訓練模型,可以直接辨識出圖片中的物件�
 
 **web detection在網路上搜尋相似圖片，並從這些搜尋結果中提取內容，回傳圖片更多相關資訊。**
 web detection將會是我**主要的選擇**。
+
 [web detection方法使用demo](https://gist.github.com/e96031413/300c91efe5671f8f29c0771116cc303d#file-google_cloud_vision_api-py)
 
 [web detection回傳結果](https://gist.github.com/e96031413/147563e2bc4f947d0c6f2e8a9c564f8d)
-
 
 
 
@@ -49,3 +57,6 @@ web detection將會是我**主要的選擇**。
 | Crop hints                          | 可以幫助你裁剪照片，以符合你想要做的主題。                   |
 | Explicit Content Detection          | 檢測圖片中是否有不適當的內容。 adult(成人)、spoof(詐騙)、medical(藥物)、violence(暴力) |
 | Landmark                            | 地標偵測，圖片中的地點在哪裡                                 |
+
+------
+
