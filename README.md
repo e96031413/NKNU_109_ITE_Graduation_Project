@@ -35,9 +35,11 @@ Google Vision API不需要訓練模型,可以直接辨識出圖片中的物件�
 **web detection在網路上搜尋相似圖片，並從這些搜尋結果中提取內容，回傳圖片更多相關資訊。**
 web detection將會是我**主要的選擇**。
 
-[web detection方法使用demo](https://gist.github.com/e96031413/300c91efe5671f8f29c0771116cc303d#file-google_cloud_vision_api-py)
+[web detection 官方線上 demo](https://cloud.google.com/vision#section-2)：線上版測試
 
-[web detection回傳結果](https://gist.github.com/e96031413/147563e2bc4f947d0c6f2e8a9c564f8d)
+[web detection python demo](https://gist.github.com/e96031413/300c91efe5671f8f29c0771116cc303d#file-google_cloud_vision_api-py)：實際的Python程式碼
+
+[web detection回傳結果](https://gist.github.com/e96031413/147563e2bc4f947d0c6f2e8a9c564f8d)：回傳的JSON格式資訊
 
 
 
@@ -53,4 +55,3 @@ web detection將會是我**主要的選擇**。
 | Crop hints                          | 可以幫助你裁剪照片，以符合你想要做的主題。                   |
 | Explicit Content Detection          | 檢測圖片中是否有不適當的內容。 adult(成人)、spoof(詐騙)、medical(藥物)、violence(暴力) |
 | Landmark                            | 地標偵測，圖片中的地點在哪裡                                 |
-
