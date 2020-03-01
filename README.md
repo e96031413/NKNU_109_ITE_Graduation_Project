@@ -31,6 +31,7 @@ Google Vision API不需要訓練模型,可以直接辨識出圖片中的物件�
 **web detection在網路上搜尋相似圖片，並從這些搜尋結果中提取內容，回傳圖片更多相關資訊。**
 web detection將會是我**主要的選擇**。
 [web detection方法使用demo](https://gist.github.com/e96031413/300c91efe5671f8f29c0771116cc303d#file-google_cloud_vision_api-py)
+
 [web detection回傳結果](https://gist.github.com/e96031413/147563e2bc4f947d0c6f2e8a9c564f8d)
 
 
