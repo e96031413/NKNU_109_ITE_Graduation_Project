@@ -4,10 +4,6 @@
 
 ### 目前所嘗試過可行的影像偵測方法：
 
-------
-
-
-
 #### 1.[使用YOLOv3演算法進行水雉辨識](https://github.com/e96031413/My-Programming-Project/tree/master/YOLOv3%E6%B0%B4%E9%9B%89%E8%BE%A8%E8%AD%98)
 
 從去年9月參加聯發科比賽,就一直使用的方法。
@@ -57,6 +53,4 @@ web detection將會是我**主要的選擇**。
 | Crop hints                          | 可以幫助你裁剪照片，以符合你想要做的主題。                   |
 | Explicit Content Detection          | 檢測圖片中是否有不適當的內容。 adult(成人)、spoof(詐騙)、medical(藥物)、violence(暴力) |
 | Landmark                            | 地標偵測，圖片中的地點在哪裡                                 |
-
-------
 
