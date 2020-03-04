@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 最後更新時間：3月3日20：04
+### 本文最後更新時間：3月4日21：51
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -23,6 +23,10 @@ AutoML Vision是一個很方便的線上服務,可以在**線上進行Model訓�
 
 **搭配Python API**：讓Jetson Nano或是Raspberry Pi進行線上辨識,減輕硬體負擔
 **[搭配React Native的API](https://github.com/shaqian/tflite-react-native/tree/master/example)**：可完成Android的辨識APP開發
+
+**3/4日完成5種水鳥的模型訓練, **
+
+精確度 97.76%、喚回度86.18%
 
 ------
 
