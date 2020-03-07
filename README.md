@@ -28,7 +28,7 @@ AutoML Vision是一個很方便的線上服務,可以在**線上進行Model訓�
 
 精確度 97.76%、喚回度86.18%
 
-參考[NKNU_109_ITE_Graduation_Project](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%Model)/5種不同水鳥/
+參考NKNU_109_ITE_Graduation_Project/TensorFlow Model/5種不同水鳥/
 
 ------
 
