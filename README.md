@@ -24,7 +24,7 @@ AutoML Vision是一個很方便的線上服務,可以在**線上進行Model訓�
 **搭配Python API**：讓Jetson Nano或是Raspberry Pi進行線上辨識,減輕硬體負擔
 **[搭配React Native的API](https://github.com/shaqian/tflite-react-native/tree/master/example)**：可完成Android的辨識APP開發
 
-**3/4日完成5種水鳥的[模型]訓練**(https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/5%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
+3/4日完成5種水鳥的模型訓練(https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/5%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
 
 精確度 97.76%、喚回度86.18%
 
