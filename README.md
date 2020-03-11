@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：3月4日21：51
+### 本文最後更新時間：3月11日20：20
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -14,19 +14,26 @@
 
 #### 2.[Google Cloud使用筆記(六)：使用 Cloud AutoML Vision訓練影像辨識模型(Tensorflow Lite)](https://medium.com/@yanweiliu/google-cloud-automl-vision-model-training-d80fabc17dfe)
 
-**想法：**
+#### **想法：**
 
 AutoML Vision是一個很方便的線上服務,可以在**線上進行Model訓練**,也**不用自己手動標記框框**,
 就能自動訓練模型,目前模型準確度達75%,也可以**匯出成API**或是**Tensorflow Lite的Model**。
 
-**3/3日將測試版本的Model上傳到GitHub上**
+#### **3/3日將測試版本的Model上傳到GitHub上**
+
+
 
 **搭配Python API**：讓Jetson Nano或是Raspberry Pi進行線上辨識,減輕硬體負擔
+
+
+
 **[搭配React Native的API](https://github.com/shaqian/tflite-react-native/tree/master/example)**：可完成Android的辨識APP開發
+
+
 
 3/4日完成5種水鳥的模型訓練(https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/5%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
 
-精確度 97.76%、喚回度86.18%
+**精確度 97.76%、喚回度86.18%**
 
 參考NKNU_109_ITE_Graduation_Project/TensorFlow Model/5種不同水鳥/
 
@@ -36,7 +43,11 @@ AutoML Vision是一個很方便的線上服務,可以在**線上進行Model訓�
 
 #### 3.[Google Cloud使用筆記(五)：使用 Google Vision API進行影像辨識](https://medium.com/@yanweiliu/google-cloud%E4%BD%BF%E7%94%A8%E7%AD%86%E8%A8%98-%E4%BA%94-%E4%BD%BF%E7%94%A8-google-vision-api%E9%80%B2%E8%A1%8C%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98-51aabc2064ff)
 
-**想法：**
+#### **程式碼：**
+
+**demo1.py**：Vision API使用範例
+
+#### **介紹：**
 
 Google Vision API不需要訓練模型,可以直接辨識出圖片中的物件名稱。能傳回如下的JSON格式資訊：
 
@@ -51,7 +62,7 @@ web detection將會是我**主要的選擇**。
 
 
 
-**Vision API功能簡介**
+#### **Vision API功能簡介**
 
 | 功能                                | 說明                                                         |
 | ----------------------------------- | ------------------------------------------------------------ |
