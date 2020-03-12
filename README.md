@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：3月11日20：20
+### 本文最後更新時間：3月12日09：05
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -74,3 +74,11 @@ web detection將會是我**主要的選擇**。
 | Crop hints                          | 可以幫助你裁剪照片，以符合你想要做的主題。                   |
 | Explicit Content Detection          | 檢測圖片中是否有不適當的內容。 adult(成人)、spoof(詐騙)、medical(藥物)、violence(暴力) |
 | Landmark                            | 地標偵測，圖片中的地點在哪裡                                 |
+
+#### 4.[Multiple Object Detectors Sample App](https://github.com/e96031413/multiple-object-detectors)
+
+A quick guide to using multiple object detection models with always AI
+
+可混合多個模型一起辨識的程式，不同模型的辨識結果(偵測框)以顏色區別表示
+
+
