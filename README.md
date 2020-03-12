@@ -75,6 +75,8 @@ web detection將會是我**主要的選擇**。
 | Explicit Content Detection          | 檢測圖片中是否有不適當的內容。 adult(成人)、spoof(詐騙)、medical(藥物)、violence(暴力) |
 | Landmark                            | 地標偵測，圖片中的地點在哪裡                                 |
 
+------
+
 #### 4.[Multiple Object Detectors Sample App](https://github.com/e96031413/multiple-object-detectors)
 
 A quick guide to using multiple object detection models with always AI
