@@ -1,18 +1,16 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：3月12日09：05
+### 本文最後更新時間：3月13日10：42
 
 ### 目前所嘗試過可行的影像偵測方法：
 
-#### 1.[使用YOLOv3演算法進行水雉辨識](https://github.com/e96031413/My-Programming-Project/tree/master/YOLOv3%E6%B0%B4%E9%9B%89%E8%BE%A8%E8%AD%98)
+### 1.[使用YOLOv3演算法進行水雉辨識](https://github.com/e96031413/My-Programming-Project/tree/master/YOLOv3%E6%B0%B4%E9%9B%89%E8%BE%A8%E8%AD%98)
 
 從去年9月參加聯發科比賽,就一直使用的方法。
 
 ------
 
-
-
-#### 2.[Google Cloud使用筆記(六)：使用 Cloud AutoML Vision訓練影像辨識模型(Tensorflow Lite)](https://medium.com/@yanweiliu/google-cloud-automl-vision-model-training-d80fabc17dfe)
+### 2.[Google Cloud使用筆記(六)：使用 Cloud AutoML Vision訓練影像辨識模型(Tensorflow Lite)](https://medium.com/@yanweiliu/google-cloud-automl-vision-model-training-d80fabc17dfe)
 
 #### **想法：**
 
@@ -41,11 +39,11 @@ AutoML Vision是一個很方便的線上服務,可以在**線上進行Model訓�
 
 
 
-#### 3.[Google Cloud使用筆記(五)：使用 Google Vision API進行影像辨識](https://medium.com/@yanweiliu/google-cloud%E4%BD%BF%E7%94%A8%E7%AD%86%E8%A8%98-%E4%BA%94-%E4%BD%BF%E7%94%A8-google-vision-api%E9%80%B2%E8%A1%8C%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98-51aabc2064ff)
+### 3.[Google Cloud使用筆記(五)：使用 Google Vision API進行影像辨識](https://medium.com/@yanweiliu/google-cloud%E4%BD%BF%E7%94%A8%E7%AD%86%E8%A8%98-%E4%BA%94-%E4%BD%BF%E7%94%A8-google-vision-api%E9%80%B2%E8%A1%8C%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98-51aabc2064ff)
 
 #### **程式碼：**
 
-**demo1.py**：Vision API使用範例
+**demo1.py**：[Vision API使用範例](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/demo1.py)
 
 #### **介紹：**
 
@@ -77,10 +75,16 @@ web detection將會是我**主要的選擇**。
 
 ------
 
-#### 4.[Multiple Object Detectors Sample App](https://github.com/e96031413/multiple-object-detectors)
+### 4.[Multiple Object Detectors Sample App](https://github.com/e96031413/multiple-object-detectors)
 
 A quick guide to using multiple object detection models with always AI
 
 可混合多個模型一起辨識的程式，不同模型的辨識結果(偵測框)以顏色區別表示
 
+### 5.[Tensorflow_Lite_Demo](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/Tensorflow_Lite_Demo)
 
+2020/03/13更新：
+
+[NVIDIA Jetson Nano學習筆記（四）：安裝與執行Tensorflow Lite Model官方範例](https://medium.com/@yanweiliu/tflite-on-jetson-nano-c480fdf9ac2)
+
+成功在Jetson Nano上執行TF Lite的Model
