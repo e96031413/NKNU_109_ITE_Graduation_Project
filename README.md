@@ -89,7 +89,7 @@ A quick guide to using multiple object detection models with always AI
 
 成功在Jetson Nano上執行TF Lite的Model
 
-### 6.[LocalDataToFirebase.py]()
+### 6.[LocalDataToFirebase.py](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/LocalDataToFirebase.py)
 
 2020/03/18更新：
 
