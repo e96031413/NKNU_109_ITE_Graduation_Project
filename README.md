@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：3月13日10：42
+### 本文最後更新時間：3月18日20：18
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -88,3 +88,9 @@ A quick guide to using multiple object detection models with always AI
 [NVIDIA Jetson Nano學習筆記（四）：安裝與執行Tensorflow Lite Model官方範例](https://medium.com/@yanweiliu/tflite-on-jetson-nano-c480fdf9ac2)
 
 成功在Jetson Nano上執行TF Lite的Model
+
+### 6.[LocalDataToFirebase.py]()
+
+2020/03/18更新：
+
+成功製作Firebase的測試資料，供後續React Native APP串接測試
