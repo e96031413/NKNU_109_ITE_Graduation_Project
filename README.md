@@ -99,6 +99,8 @@ A quick guide to using multiple object detection models with always AI
 
 2020/03/21更新：
 
+[NVIDIA Jetson Nano學習筆記（五）：即時影像分類系統(PiCamera+OpenCV+TensorFlow Lite+Firebase)](https://medium.com/@yanweiliu/nvidia-jetson-nano%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E4%BA%94-%E5%8D%B3%E6%99%82%E5%BD%B1%E5%83%8F%E5%88%86%E9%A1%9E%E7%B3%BB%E7%B5%B1-picamera-opencv-tensorflow-lite-firebase-3aefbf5a1784)
+
 **功能：**
     
 (1)使用OpenCV讀取PiCamera鏡頭，並透過Pillow與NumPy將OpenCV格式轉換成Tensorflow Lite能讀取的格式
