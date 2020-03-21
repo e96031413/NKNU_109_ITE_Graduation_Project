@@ -100,7 +100,7 @@ A quick guide to using multiple object detection models with always AI
 2020/03/21更新：
 
 **功能：**
-
+    
 (1)使用OpenCV讀取PiCamera鏡頭，並透過Pillow與NumPy將OpenCV格式轉換成Tensorflow Lite能讀取的格式
 
 (2)目前只記錄Score > 0.7的辨識成果（label、Score、Time、fileName），用pandas輸出成CSV檔案(附加模式，避免覆蓋掉先前的辨識成果)，供後續資料分析
@@ -112,4 +112,6 @@ A quick guide to using multiple object detection models with always AI
 **目前已知BUG：**
 
 (1)暫時無法將辨識成果（label、Score、Time、fileName）文字加到辨識圖片中(cv2.putText)
+
+(2)還沒處理UnKnown標籤
 
