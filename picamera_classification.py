@@ -116,33 +116,35 @@ def main():
         # fileName: use label name + random number as our file name.
         fileName =labels[label_id] + str(random.randint(1,99999)) + '.jpg'
 
-        # Save to CSV file with pandas
-        pandas_data = {'Label':labels[label_id],'Score':prob,'Time':local_time,'fileName':fileName}
-        df = pd.DataFrame(data=pandas_data,index=[0])
-        df.to_csv('bird_data.csv',mode='a',encoding='utf8')  # Use append mode so that the csv file won't be replaced by new files
-
         # Write image to labelName.jpg
         cv2.imwrite(fileName,img)
 
         # Upload data to Firebase
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="firebase_key.json   #This file is downloaded from FireBaseProject -> Settings -> serviceaccounts -> click the button to get your CREDENTIALS
-        db_url='https://test-XXXXX.firebaseio.com'    # XXXXX = e7b86
+        db_url='https://test-e7b86.firebaseio.com'    
         fdb=firebase.FirebaseApplication(db_url,None)
 
-        firebase_data =[{'label':labels[label_id],'Score':prob,'Time':local_time,'fileName':fileName},]
+        # Upload image to Firebase
+        client = storage.Client()
+        bucket = client.get_bucket('test-e7b86.appspot.com')
+
+        imagePath = "/home/e96031413/" + fileName    # Replace "/home/e96031413" with your own path
+        imageBlob = bucket.blob(fileName)
+
+        imageBlob.upload_from_filename(imagePath)    # Upload image to firebase
+        imageBlob.make_public()
+        publicURL = imageBlob.public_url
+
+        firebase_data =[{'label':labels[label_id],'Score':prob,'Time':local_time,'fileName':fileName,'image_url':publicURL},]
         for data in firebase_data:
           fdb.post('bird-data',data)
           time.sleep(3)
 
-        # Upload image to Firebase
-        client = storage.Client()
-        bucket = client.get_bucket('test-XXXXX.appspot.com') # XXXXX = e7b86
-        imageBlob = bucket.blob('/')
-        imagePath = "/home/e96031413/" + fileName    # Replace "/home/e96031413" with your own path
-        imageBlob = bucket.blob(fileName)
-        imageBlob.upload_from_filename(imagePath)    # Upload image to firebase
-        
-        
+        # Save to CSV file with pandas
+        pandas_data = {'Label':labels[label_id],'Score':prob,'Time':local_time,'fileName':fileName,'image_url':publicURL}
+        df = pd.DataFrame(data=pandas_data,index=[0])
+        df.to_csv('bird_data.csv',mode='a',encoding='utf8')  # Use append mode so that the csv file won't be replaced by new files
+
       # keyCode detects which key you press
       keyCode = cv2.waitKey(30) & 0xFF
       # Stop the program on the ESC key
