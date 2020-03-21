@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：3月18日20：18
+### 本文最後更新時間：3月21日16：06
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -94,3 +94,18 @@ A quick guide to using multiple object detection models with always AI
 2020/03/18更新：
 
 成功製作Firebase的測試資料，供後續React Native APP串接測試
+
+### 7.[picamera_classification.py](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/picamera_classification.py)
+
+2020/03/21更新：
+
+**功能：**
+
+使用OpenCV讀取PiCamera鏡頭，並透過Pillow與NumPy將OpenCV格式轉換成Tensorflow Lite能讀取的格式
+目前只記錄Score > 0.7的辨識成果（label、Score、Time、fileName），用pandas輸出成CSV檔案(附加模式，避免覆蓋掉先前的辨識成果)，供後續資料分析
+用指定檔名保存辨識圖片(辨識出來的名稱與隨機數字作為檔名)
+已將辨識成果（label、Score、Time、fileName）以及辨識圖片上傳至Firebase資料庫，供後續React Native APP串接使用
+
+**目前已知BUG：**
+暫時無法將辨識成果（label、Score、Time、fileName）文字加到辨識圖片中(cv2.putText)
+
