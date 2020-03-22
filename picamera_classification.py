@@ -120,7 +120,7 @@ def main():
         cv2.imwrite(fileName,img)
 
         # Upload data to Firebase
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="firebase_key.json   #This file is downloaded from FireBaseProject -> Settings -> serviceaccounts -> click the button to get your CREDENTIALS
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="firebase_key.json"   #This file is downloaded from FireBaseProject -> Settings -> serviceaccounts -> click the button to get your CREDENTIALS
         db_url='https://test-e7b86.firebaseio.com'    
         fdb=firebase.FirebaseApplication(db_url,None)
 
