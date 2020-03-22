@@ -17,11 +17,11 @@ from PIL import Image
 from tflite_runtime.interpreter import Interpreter
 
 def gstreamer_pipeline(
-    capture_width=224,
-    capture_height=224,
+    capture_width=3280,                                     # Set to your camera's highest resolution
+    capture_height=2464,
     display_width=224,
     display_height=224,
-    framerate=30,
+    framerate=120,                                                  # Set the value according to your camera
     flip_method=0,
 ):
     return (
