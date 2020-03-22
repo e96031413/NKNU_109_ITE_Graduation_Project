@@ -117,5 +117,5 @@ A quick guide to using multiple object detection models with always AI
 
 (2)還沒處理UnKnown標籤
 
-(3)
+(3)鏡頭若搖晃太大力會有誤判情況產生(低解析度)
 
