@@ -1,8 +1,6 @@
 '''
-完整版程式，能在Jetson Nano上直接把資料（label、Score、Time、fileName）及圖片上傳至Firebase，
-並顯示圖片公開連結、保存CSV檔（label、Score、Time、fileName）
+Jetson Nano離線版辨識及保存CSV資料
 '''
-
 
 from __future__ import absolute_import
 from __future__ import division
@@ -23,11 +21,11 @@ from PIL import Image
 from tflite_runtime.interpreter import Interpreter
 
 def gstreamer_pipeline(
-    capture_width=224,
-    capture_height=224,
+    capture_width=3280,                                     # Set to your camera's highest resolution
+    capture_height=2464,
     display_width=224,
     display_height=224,
-    framerate=30,
+    framerate=120,                                                  # Set the value according to your camera
     flip_method=0,
 ):
     return (
@@ -124,27 +122,6 @@ def main():
 
         # Write image to labelName.jpg
         cv2.imwrite(fileName,img)
-
-        # Upload data to Firebase
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="firebase_key.json   #This file is downloaded from FireBaseProject -> Settings -> serviceaccounts -> click the button to get your CREDENTIALS
-        db_url='https://test-e7b86.firebaseio.com'    
-        fdb=firebase.FirebaseApplication(db_url,None)
-
-        # Upload image to Firebase
-        client = storage.Client()
-        bucket = client.get_bucket('test-e7b86.appspot.com')
-
-        imagePath = "/home/e96031413/" + fileName    # Replace "/home/e96031413" with your own path
-        imageBlob = bucket.blob(fileName)
-
-        imageBlob.upload_from_filename(imagePath)    # Upload image to firebase
-        imageBlob.make_public()
-        publicURL = imageBlob.public_url
-
-        firebase_data =[{'label':labels[label_id],'Score':prob,'Time':local_time,'fileName':fileName,'image_url':publicURL},]
-        for data in firebase_data:
-          fdb.post('bird-data',data)
-          time.sleep(3)
 
         # Save to CSV file with pandas
         pandas_data = {'Label':labels[label_id],'Score':prob,'Time':local_time,'fileName':fileName,'image_url':publicURL}
