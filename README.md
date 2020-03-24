@@ -119,3 +119,13 @@ A quick guide to using multiple object detection models with always AI
 
 (3)鏡頭若搖晃太大力會有誤判情況產生(低解析度)
 
+### 8.[實際使用程式](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/%E5%AF%A6%E9%9A%9B%E4%BD%BF%E7%94%A8%E7%A8%8B%E5%BC%8F)
+
+2020/03/24更新:
+
+將功能從[picamera_classification.py](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/picamera_classification.py)分開出來
+
+1.先用[offline_picamera_classification.py](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/%E5%AF%A6%E9%9A%9B%E4%BD%BF%E7%94%A8%E7%A8%8B%E5%BC%8F/offline_picamera_classification.py)在Jetson Nano進行離線辨識
+
+2.當SD卡中的內容取回(CSV檔案)後，在PC端使用pandas讀取CSV資料，並透過Firebase的套件，將資料上傳到
+
