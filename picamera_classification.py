@@ -1,3 +1,9 @@
+'''
+完整版程式，能在Jetson Nano上直接把資料（label、Score、Time、fileName）及圖片上傳至Firebase，
+並顯示圖片公開連結、保存CSV檔（label、Score、Time、fileName）
+'''
+
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
