@@ -106,6 +106,7 @@ def main():
       label_id, prob = results[0]
       seconds = time.time()
       local_time=time.ctime(seconds)
+      base_url = "https://storage.googleapis.com/test-e7b86.appspot.com/"
 
       #font = cv2.FONT_HERSHEY_SIMPLEX
       #color = (0, 0, 255)
@@ -118,8 +119,9 @@ def main():
         #img=cv2.putText(img, local_time, (10, 30), font, 1, color, 1) #Time
 
         # fileName: use label name + random number as our file name.
-        fileName =labels[label_id] + str(random.randint(1,99999)) + '.jpg'
-
+        fileName = labels[label_id] + str(random.randint(1,99999)) + '.jpg'
+        
+        publicURL = base_url +fileName
         # Write image to labelName.jpg
         cv2.imwrite(fileName,img)
 
