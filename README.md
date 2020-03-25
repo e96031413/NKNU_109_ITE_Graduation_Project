@@ -128,6 +128,8 @@ A quick guide to using multiple object detection models with always AI
 1.先用[offline_picamera_classification.py](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/%E5%AF%A6%E9%9A%9B%E4%BD%BF%E7%94%A8%E7%A8%8B%E5%BC%8F/offline_picamera_classification.py)在Jetson Nano進行離線辨識
 ，並且保存成CSV檔案。
 
-2.當SD卡中的內容取回(CSV檔案)後，在PC端使用pandas讀取CSV資料，並透過Firebase的套件，將資料上傳到Firebase
-[PC_to_Firebase.py](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/%E5%AF%A6%E9%9A%9B%E4%BD%BF%E7%94%A8%E7%A8%8B%E5%BC%8F/PC_to_Firebase.py)
+2.[PC_to_Firebase.py](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/%E5%AF%A6%E9%9A%9B%E4%BD%BF%E7%94%A8%E7%A8%8B%E5%BC%8F/PC_to_Firebase.py)
+
+當SD卡中的內容取回(CSV檔案)後，在PC端使用pandas讀取CSV資料，並透過Firebase的套件，將資料上傳到Firebase
+
 
