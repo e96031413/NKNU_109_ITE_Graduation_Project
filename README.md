@@ -31,6 +31,13 @@ AutoML Vision是一個很方便的線上服務,可以在**線上進行Model訓�
 
 3/4日完成5種水鳥的模型訓練(https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/5%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
 
+* Black_Coot
+* Gallinula_chloropus
+* Green_winged_Teal
+* Little_Grebe
+* Pheasant_tailed_Jacana
+
+
 **精確度 97.76%、喚回度86.18%**
 
 參考NKNU_109_ITE_Graduation_Project/TensorFlow Model/5種不同水鳥/
@@ -133,4 +140,22 @@ A quick guide to using multiple object detection models with always AI
 
 當SD卡中的內容取回(照片、CSV檔案)後，在PC端使用pandas讀取CSV資料，並透過Firebase的套件，分別將「拍攝照片」、「資料」上傳到Firebase。
 
+3/4日完成5種水鳥的模型訓練(https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/5%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
+
+### 9.[3/31上傳9種水鳥的Model](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/9%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
+
+* Egretta_garzetta
+* Black_Coot
+* Gallinula_chloropus
+* Fulica_atra
+* Himantopus_himantopus
+* Ixobrychus_sinensis
+* Green_winged_Teal
+* Little_Grebe
+* Pheasant_tailed_Jacana
+
+
+**精確度 96.21%、喚回度74.36%**
+
+參考NKNU_109_ITE_Graduation_Project/TensorFlow Model/9種不同水鳥/
 
