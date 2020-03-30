@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：3月25日08：28
+### 本文最後更新時間：3月31日05：42
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -142,7 +142,9 @@ A quick guide to using multiple object detection models with always AI
 
 3/4日完成5種水鳥的模型訓練(https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/5%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
 
-### 9.[3/31上傳9種水鳥的Model](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/9%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
+### 9.[上傳9種水鳥的Model](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/9%E7%A8%AE%E4%B8%8D%E5%90%8C%E6%B0%B4%E9%B3%A5)
+
+2020/03/31更新：
 
 * Egretta_garzetta
 * Black_Coot
