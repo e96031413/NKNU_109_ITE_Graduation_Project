@@ -157,7 +157,7 @@ A quick guide to using multiple object detection models with always AI
 * Pheasant_tailed_Jacana
 
 
-**精確度 96.21%、喚回度74.36%**
+**精確度 94.49%、喚回度81.68%**
 
 參考NKNU_109_ITE_Graduation_Project/TensorFlow Model/9種不同水鳥/
 
