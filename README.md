@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：4月15日21：04
+### 本文最後更新時間：4月15日21：24
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -160,6 +160,13 @@ A quick guide to using multiple object detection models with always AI
 **精確度 94.49%、喚回度81.68%**
 
 參考NKNU_109_ITE_Graduation_Project/TensorFlow Model/9種不同水鳥/
+
+### 10.[使用GluonCV的Pre-trained SSD Model](https://gist.github.com/e96031413/9f785510d338041e19e343ab1be98831)
+
+在Windows 10的作業系統，使用Pre-trained的SSD演算法Model，搭配GTX 750 Ti的GPU進行推論，花費約16秒的時間偵測一張圖片
+
+以這樣的速度下來會發現，推論速度太慢，無法做到即時辨識。
+
 
 
 ### 10.[使用Pre-trained Object Detection TFLite Model](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/TFLite_Object_Dection_Model)
