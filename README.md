@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：3月31日12：53
+### 本文最後更新時間：4月15日21：04
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -160,4 +160,7 @@ A quick guide to using multiple object detection models with always AI
 **精確度 94.49%、喚回度81.68%**
 
 參考NKNU_109_ITE_Graduation_Project/TensorFlow Model/9種不同水鳥/
+
+
+### 10.[使用Pre-trained Object Detection TFLite Model]()
 

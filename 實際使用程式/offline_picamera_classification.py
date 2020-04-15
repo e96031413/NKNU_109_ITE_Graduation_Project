@@ -20,6 +20,7 @@ from google.cloud import storage
 from PIL import Image
 from tflite_runtime.interpreter import Interpreter
 
+
 def gstreamer_pipeline(
     capture_width=3280,                                     # Set to your camera's highest resolution
     capture_height=2464,
