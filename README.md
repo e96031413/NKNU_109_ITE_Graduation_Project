@@ -162,5 +162,27 @@ A quick guide to using multiple object detection models with always AI
 參考NKNU_109_ITE_Graduation_Project/TensorFlow Model/9種不同水鳥/
 
 
-### 10.[使用Pre-trained Object Detection TFLite Model]()
+### 10.[使用Pre-trained Object Detection TFLite Model](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/tree/master/TensorFlow%20Model/TFLite_Object_Dection_Model)
 
+2020/04/15更新：
+
+構想是：
+
+先用[開源的Object Dection Model](https://tfhub.dev/s?deployment-format=lite&module-type=image-object-detection)進行物件偵測，產生出Bounding Boxes後，再透過Image Classification Model進行Bird Species判斷
+
+```
+# Pseudocode of the concept
+
+def prediction():
+
+    Object_Dection()
+
+    if labelName == Bird:
+        Image_Classification()
+        
+        if prob >0.7:
+            save_img()
+            img_to_firebase()
+            result_to_firebase()
+            save_to_csv()
+```
