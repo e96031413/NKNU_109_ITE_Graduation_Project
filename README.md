@@ -179,7 +179,7 @@ def prediction():
 
     Object_Dection()
 
-    if labelName == Bird:
+    if labelName == "Bird":
         Image_Classification()
         
         if prob >0.7:
