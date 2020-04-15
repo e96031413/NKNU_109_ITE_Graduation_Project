@@ -174,6 +174,8 @@ A quick guide to using multiple object detection models with always AI
 # Pseudocode of the concept
 
 def prediction():
+    
+    Model_SETUP()
 
     Object_Dection()
 
