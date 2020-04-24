@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：4月15日21：24
+### 本文最後更新時間：4月24日20：00
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -195,3 +195,6 @@ def prediction():
             result_to_firebase()
             save_to_csv()
 ```
+2020/04/24更新:
+
+[ObjectDetection_on_Nano.py]()
