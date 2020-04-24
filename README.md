@@ -197,4 +197,12 @@ def prediction():
 ```
 2020/04/24更新:
 
-[ObjectDetection_on_Nano.py]()
+[ObjectDetection_on_Nano.py](https://github.com/e96031413/NKNU_109_ITE_Graduation_Project/blob/master/ObjectDetection_on_Nano.py)
+
+完成Object Detection的程式
+
+目前FPS約在4.X
+
+使用Google的quantized SSDLite-MobileNet-v2 object detection model
+
+[NVIDIA Jetson Nano學習筆記（六）：即時影像偵測系統(PiCamera+OpenCV+TensorFlow Lite)](https://medium.com/@yanweiliu/tensorflow-lite-real-time-object-detection-with-pi-camera-on-nvidia-jetson-nano-4118e50eee15)
