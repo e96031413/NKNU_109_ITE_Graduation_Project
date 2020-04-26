@@ -1,6 +1,6 @@
 # NKNU_109_ITE_Graduation_Project
 
-### 本文最後更新時間：4月24日20：00
+### 本文最後更新時間：4月26日19：27
 
 ### 目前所嘗試過可行的影像偵測方法：
 
@@ -176,6 +176,24 @@ A quick guide to using multiple object detection models with always AI
 構想是：
 
 先用[開源的Object Dection Model](https://tfhub.dev/s?deployment-format=lite&module-type=image-object-detection)進行物件偵測，產生出Bounding Boxes後，再透過Image Classification Model進行Bird Species判斷
+
+2020/04/26更新：
+
+該構想不可行。
+
+根據網路上及自己實測的結果，同一個Camera只能在同個程式裡面被OpenCV的VideoCapture讀取一次，不能重複。
+
+因此，每個Camera只能執行Object Detection或Image Classification其中一個任務而已。
+
+參考:
+
+(1)[Using two VideoCaptures in openCV to capture the same device](https://stackoverflow.com/questions/44737963/using-two-videocaptures-in-opencv-to-capture-the-same-device)
+
+(2)[Multiple VideoCapture on one camera](https://stackoverflow.com/questions/22249692/multiple-videocapture-on-one-camera)
+
+目前想到的解決方案：
+
+使用Object Detection，if object_name == 'bird'，將影片保存到Local，接著透過Image Classification讀取影片進行辨識
 
 ```
 # Pseudocode of the concept
