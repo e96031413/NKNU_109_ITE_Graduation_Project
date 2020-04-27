@@ -177,7 +177,7 @@ A quick guide to using multiple object detection models with always AI
 
 先用[開源的Object Dection Model](https://tfhub.dev/s?deployment-format=lite&module-type=image-object-detection)進行物件偵測，產生出Bounding Boxes後，再透過Image Classification Model進行Bird Species判斷
 
-2020/04/26更新：
+2020/04/27更新：
 
 該構想不可行。
 
@@ -191,9 +191,8 @@ A quick guide to using multiple object detection models with always AI
 
 (2)[Multiple VideoCapture on one camera](https://stackoverflow.com/questions/22249692/multiple-videocapture-on-one-camera)
 
-目前想到的解決方案：
-
-使用Object Detection，if object_name == 'bird'，將影片保存到Local，接著透過Image Classification讀取影片進行辨識
+2020/04/27更新-老師提供的解決方案:
+使用Object Detection，if object_name == 'bird'，拍攝圖片，並且保存到Local，接著讀取Local圖片，再透過Image Classification讀取圖片進行辨識
 
 ```
 # Pseudocode of the concept
