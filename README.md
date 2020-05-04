@@ -7,11 +7,17 @@
 [文章：NVIDIA Jetson Nano學習筆記（七）：即時影像偵測暨辨識系統(PiCamera+OpenCV+TensorFlow Lite+Firebase](https://medium.com/@yanweiliu/nvidia-jetson-nano-tensorflow-lite-object-detection-and-image-classification-with-picamera-opencv-firebase-3cffabf8d980)
 
 [1] 載入Object Detection和Image Classification的TFLite Model。
+
 [2] 透過OpenCV讀取frame進行Real-Time Object Detection。
+
 [3] 如果偵測到指定Object(例如："bird"), 保存圖片。
+
 [4] 針對該圖片進行Image Classification。
+
 [5] 上傳該張圖片和Image Classification的結果(LabelName, ScoreValue, Time, Pubic-Access Image Url)至Firebase資料庫。
+
 [6] 將資料(LabelName, ScoreValue, Time, Pubic-Access Image Url)透過附加模式保存成一個CSV檔案，避免被複寫。
+
 [7] 當圖片和資料被上傳到Firebase後，刪除本地端圖片，避免SD卡的磁碟空間用盡。
 
 ---
